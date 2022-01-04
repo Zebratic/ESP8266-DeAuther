@@ -1,5 +1,3 @@
-/* This software is licensed under the MIT License: https://github.com/spacehuhntech/esp8266_deauther */
-
 var langJson = {};
 
 function getE(name) {
@@ -31,15 +29,15 @@ function convertLineBreaks(str) {
 function showMessage(msg) {
 	if (msg.startsWith("ERROR")) {
 		getE("status").style.backgroundColor = "#d33";
-		getE("status").innerHTML = "disconnected";
+		getE("status").innerHTML = "disconnected 😞";
 
 		console.error("disconnected (" + msg + ")");
 	} else if (msg.startsWith("LOADING")) {
 		getE("status").style.backgroundColor = "#fc0";
-		getE("status").innerHTML = "loading...";
+		getE("status").innerHTML = "loading... 🤔";
 	} else {
 		getE("status").style.backgroundColor = "#3c5";
-		getE("status").innerHTML = "connected";
+		getE("status").innerHTML = "connected! Lets pwn some networks! 😈";
 
 		console.log("" + msg + "");
 	}
