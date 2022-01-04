@@ -10,6 +10,11 @@ h1 {
 	font-size: 1.7rem;
     margin-top: 1rem;
     background: #2f3136;
+	background-color: #000000;
+	background-image: url('https://i.pinimg.com/originals/0c/cc/f9/0cccf95b25a676546aaf6a3592a92476.gif');
+	background-size: cover;
+	background-position: 50% 47.5%;
+	background-repeat: no-repeat;
     color: #bfbfbb;
     padding: 0.2em 1em;
     border-radius: 3px;
@@ -22,6 +27,11 @@ h2 {
     margin-top: 1rem;
     background: #2f3136;
     color: #bfbfbb;
+	background-color: #000000;
+	background-image: url('https://i.pinimg.com/originals/0c/cc/f9/0cccf95b25a676546aaf6a3592a92476.gif');
+	background-size: cover;
+	background-position: 50% 47.5%;
+	background-repeat: no-repeat;
     padding: 0.4em 1.8em;
     border-radius: 3px;
 	border-left: solid #20c20e 5px;
@@ -500,14 +510,29 @@ input[type="file"] {
 	}
   }
 
-  html {
-	height: 100%;
-	margin:0px;
-	padding: 0px;
-  }
-  #particles-js{
+ /* ---- particles.js container ---- */
+
+#particles-js{
 	width: 100%;
 	height: 100%;
-	background: #111111;
+	background-color: #000000;
+	background-image: url('https://cdn.dribbble.com/users/590642/screenshots/2809316/5774afca12f15299688198.gif');
+	background-size: fill;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+  }
+
+  html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+  }
+  
+  html{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  body{
+    font: sans-serif;
   }
 }
